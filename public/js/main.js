@@ -1,5 +1,10 @@
 import Conversor from "./classes/conversor.js";
 
 const conversor = new Conversor();
+const inputNumero = $("[data-numero]");
 
-conversor.decimalParaOutraBase(117, 2);
+inputNumero.blur(function() {
+    const numeroParaConverter = $(this).val();
+
+    conversor.decimalParaOutraBase(numeroParaConverter, 2);
+});

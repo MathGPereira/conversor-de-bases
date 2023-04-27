@@ -6,13 +6,19 @@ export default class Conversor {
 
         numeroConvertido.push(resto);
         console.log(numeroConvertido)
+        Conversor.imprimeResposta(numeroConvertido.reverse().join(""));
 
         if(quociente <= 1) {
             numeroConvertido.push(quociente);
-            console.log(numeroConvertido.reverse().join(""));
+            Conversor.imprimeResposta(numeroConvertido.reverse().join(""));
+
             return;
         }
         
         this.decimalParaOutraBase(quociente, base);
+    }
+
+    static imprimeResposta(numeroConvertido) {
+        $("[data-resposta]").val(numeroConvertido);
     }
 }
