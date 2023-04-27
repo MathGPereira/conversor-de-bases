@@ -5,12 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conversor</title>
-        <link type="text/css" rel="stylesheet" href="./public/sass/style.scss">
+        <link type="text/css" rel="stylesheet" href="./public/sass/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">
+                <img src="./public/img/logo/logo.png" alt="Logo do conversor de bases numéricas" class="titulo__logo">
+            </h1>
+            <i class="cabecalho__icone-hamburguer" aria-label="menu de hambúrguer"></i>
+        </header>
+        <main class="principal">
+            <form action="#" method="get" autocomplete="off" id="formulario" class="principal__formulario">
+                <fieldset form="formulario" class="formulario__agrupamento">
+                    <label for="numero-inserido" class="agrupamento__rotulo">Insira o número aqui</label>
+                    <input type="number" name="numero-inserido" id="numero-inserido" class="agrupamento__input">
+                    <label for="numero-convertido" class="agrupamento__rotulo">Resultado</label>
+                    <input type="text" name="numero-convertido" id="numero-convertido" class="agrupamento__input">
+                </fieldset>
+            </form>
+        </main>
         <script type="text/javascript" src="./public/jquery/jquery.js"></script>
         <script type="module" src="./public/js/main.js"></script>
     </body>

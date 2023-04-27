@@ -1,2 +1,16 @@
 @import "./base/reset";
 @import "./base/base";
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    .titulo__logo {
+        height: 100px;
+        width: 100px;
+    }
+    &__icone-hamburguer {
+        background: url("../img/icone/hamburguer.png") no-repeat center center / cover;
+    }
+}
