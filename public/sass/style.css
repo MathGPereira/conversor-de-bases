@@ -86,7 +86,7 @@ html body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1em 1em 0 0.5em;
 }
 .cabecalho .titulo__logo {
   height: 100px;
@@ -94,4 +94,23 @@ html body {
 }
 .cabecalho__icone-hamburguer {
   background: url("../img/icone/hamburguer.png") no-repeat center center/cover;
+}
+
+.principal {
+  background-color: #034159;
+  box-sizing: border-box;
+  padding: 2em 0 1em 0;
+  text-align: center;
+}
+.principal__formulario {
+  width: 100%;
+}
+.principal .agrupamento__rotulo {
+  color: #0CF25D;
+  display: block;
+  margin-bottom: 5px;
+}
+.principal .agrupamento__input {
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
 }/*# sourceMappingURL=style.css.map */
