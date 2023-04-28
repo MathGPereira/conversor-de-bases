@@ -4,17 +4,19 @@
 
 .cabecalho {
     align-items: center;
-    background-color: $cinza;
+    background-color: $cor-primaria-claro;
+    border-bottom: 2px solid #dfdfdf;
     display: flex;
     justify-content: space-between;
     padding: 1em;
     &__logo {
         align-items: center;
+        color: $cor-secundaria-claro;
         column-gap: 5px;
         cursor: pointer;
         display: flex;
         font-size: 2em;
-        font-weight: 500;
+        font-weight: 700;
         .logo__imagem {
             width: 32px;
         }
@@ -22,5 +24,34 @@
     &__menu-hamburguer {
         background: url("../img/icone/hamburguer.png") no-repeat center center / cover;
         cursor: pointer;
+    }
+}
+
+.principal {
+    text-align: center;
+    &__introducao {
+        background-color: #FCFCFC;
+        padding: 1em;
+        .introducao__titulo {
+            color: $cor-terciaria-claro;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: .5em;
+        }
+        .introducao__texto {
+            color: $cor-secundaria-claro;
+            line-height: $altura-da-linha-da-fonte;
+        }
+    }
+    &__conversor {
+        background-color: $cor-quaternaria-claro;
+        padding: 0 1.5em 1em;
+        text-align: center;
+        .conversor__titulo {
+            color: $cor-secundaria-claro;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0.5em 0 1em;
+        }
     }
 }

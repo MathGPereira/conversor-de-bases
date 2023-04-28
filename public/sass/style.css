@@ -85,18 +85,20 @@ html body {
 .cabecalho {
   align-items: center;
   background-color: #F2F2F2;
+  border-bottom: 2px solid #dfdfdf;
   display: flex;
   justify-content: space-between;
   padding: 1em;
 }
 .cabecalho__logo {
   align-items: center;
+  color: rgba(20, 19, 19, 0.9098039216);
   -moz-column-gap: 5px;
        column-gap: 5px;
   cursor: pointer;
   display: flex;
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
 }
 .cabecalho__logo .logo__imagem {
   width: 32px;
@@ -104,4 +106,33 @@ html body {
 .cabecalho__menu-hamburguer {
   background: url("../img/icone/hamburguer.png") no-repeat center center/cover;
   cursor: pointer;
+}
+
+.principal {
+  text-align: center;
+}
+.principal__introducao {
+  background-color: #FCFCFC;
+  padding: 1em;
+}
+.principal__introducao .introducao__titulo {
+  color: rgba(172, 25, 25, 0.9058823529);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.principal__introducao .introducao__texto {
+  color: rgba(20, 19, 19, 0.9098039216);
+  line-height: 1.4em;
+}
+.principal__conversor {
+  background-color: rgba(6, 114, 103, 0.5568627451);
+  padding: 0 1.5em 1em;
+  text-align: center;
+}
+.principal__conversor .conversor__titulo {
+  color: rgba(20, 19, 19, 0.9098039216);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 0 1em;
 }/*# sourceMappingURL=style.css.map */

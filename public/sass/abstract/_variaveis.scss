@@ -2,13 +2,15 @@
 $familia-da-fonte: 'Roboto', sans-serif;
 $tamanho-da-fonte: 16px;
 $estilo-da-fonte: normal;
-$altura-da-linha-da-fonte: 1.2em;
+$altura-da-linha-da-fonte: 1.4em;
 $peso-da-fonte: 400;
 
 // Variáveis de cor
 $branco: #FFFFFF;
-$cinza: #F2F2F2;
 $preto: #000000;
-$cor-primaria: #034159;
-$cor-secundaria: #02735E;
-$cor-terciaria: #0CF25D;
+
+// Modo claro
+$cor-primaria-claro: #F2F2F2;
+$cor-secundaria-claro: #141313e8;
+$cor-terciaria-claro: #ac1919e7;
+$cor-quaternaria-claro: #0672678e;
