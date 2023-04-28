@@ -12,20 +12,15 @@
     </head>
     <body>
         <header class="cabecalho">
-            <h1 class="cabecalho__titulo">
-                <img src="./public/img/logo/logo.png" alt="Logo do conversor de bases numéricas" class="titulo__logo">
+            <h1 class="cabecalho__logo">
+                <img src="./public/img/logo/logo.png" alt="Logo do website" class="logo__imagem">
+                <p class="logo__texto">Bases Infinitas</p>
             </h1>
-            <i class="cabecalho__icone-hamburguer" aria-label="menu de hambúrguer"></i>
+            <i class="cabecalho__menu-hamburguer" aria-label="menu-hamburguer"></i>
         </header>
         <main class="principal">
-            <form action="#" method="get" autocomplete="off" id="formulario" class="principal__formulario">
-                <fieldset form="formulario" class="formulario__agrupamento">
-                    <label for="numero-inserido" class="agrupamento__rotulo">Insira o número aqui</label>
-                    <input type="number" name="numero-inserido" id="numero-inserido" class="agrupamento__input" placeholder="Número a ser convertido" required data-numero>
-                    <label for="numero-convertido" class="agrupamento__rotulo">Resultado</label>
-                    <input type="text" name="numero-convertido" id="numero-convertido" class="agrupamento__input" placeholder="Resultado" required data-resposta>
-                </fieldset>
-            </form>
+            <input type="text" name="numero" id="numero" placeholder="Número" data-numero>
+            <input type="text" name="resposta" id="resposta" placeholder="resposta" data-resposta>
         </main>
         <script type="text/javascript" src="./public/jquery/jquery.js"></script>
         <script type="module" src="./public/js/main.js"></script>

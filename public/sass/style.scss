@@ -4,33 +4,23 @@
 
 .cabecalho {
     align-items: center;
+    background-color: $cinza;
     display: flex;
     justify-content: space-between;
-    padding: 1em 1em 0 .5em;
-    .titulo__logo {
-        height: 100px;
-        width: 100px;
+    padding: 1em;
+    &__logo {
+        align-items: center;
+        column-gap: 5px;
+        cursor: pointer;
+        display: flex;
+        font-size: 2em;
+        font-weight: 500;
+        .logo__imagem {
+            width: 32px;
+        }
     }
-    &__icone-hamburguer {
+    &__menu-hamburguer {
         background: url("../img/icone/hamburguer.png") no-repeat center center / cover;
-    }
-}
-
-.principal {
-    background-color: $cor-primaria;
-    box-sizing: border-box;
-    padding: 2em 0 1em 0;
-    text-align: center;
-    &__formulario {
-        width: 100%;
-    }
-    .agrupamento__rotulo {
-        color: $cor-terciaria;
-        display: block;
-        margin-bottom: 5px;
-    }
-    .agrupamento__input {
-        margin-bottom: 1em;
-        padding: .5em 1em;
+        cursor: pointer;
     }
 }

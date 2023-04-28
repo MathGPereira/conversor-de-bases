@@ -77,40 +77,31 @@ html {
 }
 html body {
   box-sizing: border-box;
-  font: normal 400 16px 1.2em "Roboto", sans-serif;
+  font: normal 400 16px "Roboto", sans-serif;
   height: 100vh;
   width: 100vw;
 }
 
 .cabecalho {
   align-items: center;
+  background-color: #F2F2F2;
   display: flex;
   justify-content: space-between;
-  padding: 1em 1em 0 0.5em;
+  padding: 1em;
 }
-.cabecalho .titulo__logo {
-  height: 100px;
-  width: 100px;
+.cabecalho__logo {
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 2em;
+  font-weight: 500;
 }
-.cabecalho__icone-hamburguer {
+.cabecalho__logo .logo__imagem {
+  width: 32px;
+}
+.cabecalho__menu-hamburguer {
   background: url("../img/icone/hamburguer.png") no-repeat center center/cover;
-}
-
-.principal {
-  background-color: #034159;
-  box-sizing: border-box;
-  padding: 2em 0 1em 0;
-  text-align: center;
-}
-.principal__formulario {
-  width: 100%;
-}
-.principal .agrupamento__rotulo {
-  color: #0CF25D;
-  display: block;
-  margin-bottom: 5px;
-}
-.principal .agrupamento__input {
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
