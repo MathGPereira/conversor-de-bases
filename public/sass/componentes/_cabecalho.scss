@@ -1,0 +1,26 @@
+@import "../abstract/variaveis";
+
+.cabecalho {
+    align-items: center;
+    background-color: $cor-primaria-claro;
+    border-bottom: 2px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    &__logo {
+        align-items: center;
+        color: $cor-secundaria-claro;
+        column-gap: 5px;
+        cursor: pointer;
+        display: flex;
+        font-size: 2em;
+        font-weight: 700;
+        .logo__imagem {
+            width: 32px;
+        }
+    }
+    &__menu-hamburguer {
+        background: url("../img/icone/hamburguer.png") no-repeat center center / cover;
+        cursor: pointer;
+    }
+}
