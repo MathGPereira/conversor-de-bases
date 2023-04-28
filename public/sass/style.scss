@@ -44,14 +44,65 @@
         }
     }
     &__conversor {
+        align-items: center;
         background-color: $cor-quaternaria-claro;
+        display: flex;
+        flex-direction: column;
         padding: 0 1.5em 1em;
-        text-align: center;
         .conversor__titulo {
             color: $cor-secundaria-claro;
             font-size: 20px;
             font-weight: 500;
             padding: 0.5em 0 1em;
+        }
+        .conversor__formulario {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            .formulario__agrupamento {
+                box-sizing: border-box;
+                padding-top: .2em;
+                .agrupamento__input {
+                    border: none;
+                    border-radius: 8px;
+                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+                    padding: 0.5em 1em;
+                    width: 100%;
+                    outline: none;
+                    &::placeholder {
+                        font-size: 18px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .formulario__opcoes {
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                margin: 1em 0;
+                .opcoes {
+                    background-color: #1d776e8f;
+                    border-radius: 8px;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+                    cursor: pointer;
+                    padding: .5em;
+                    transition: background-color .3s ease-in-out;
+                    &:hover {
+                        background-color: #05ac9b8f;
+                    }
+                }
+            }
+            .formulario__converte {
+                background-color: #1d776e8f;
+                border-radius: 8px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 1em;
+                padding: .5em;
+            }
         }
     }
 }

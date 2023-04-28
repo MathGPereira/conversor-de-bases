@@ -126,13 +126,68 @@ html body {
   line-height: 1.4em;
 }
 .principal__conversor {
+  align-items: center;
   background-color: rgba(6, 114, 103, 0.5568627451);
+  display: flex;
+  flex-direction: column;
   padding: 0 1.5em 1em;
-  text-align: center;
 }
 .principal__conversor .conversor__titulo {
   color: rgba(20, 19, 19, 0.9098039216);
   font-size: 20px;
   font-weight: 500;
   padding: 0.5em 0 1em;
+}
+.principal__conversor .conversor__formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.principal__conversor .conversor__formulario .formulario__agrupamento {
+  box-sizing: border-box;
+  padding-top: 0.2em;
+}
+.principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+  padding: 0.5em 1em;
+  width: 100%;
+  outline: none;
+}
+.principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input::-moz-placeholder {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input::placeholder {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.principal__conversor .conversor__formulario .formulario__opcoes {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.principal__conversor .conversor__formulario .formulario__opcoes .opcoes {
+  background-color: rgba(29, 119, 110, 0.5607843137);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+  cursor: pointer;
+  padding: 0.5em;
+  transition: background-color 0.3s ease-in-out;
+}
+.principal__conversor .conversor__formulario .formulario__opcoes .opcoes:hover {
+  background-color: rgba(5, 172, 155, 0.5607843137);
+}
+.principal__conversor .conversor__formulario .formulario__converte {
+  background-color: rgba(29, 119, 110, 0.5607843137);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1em;
+  padding: 0.5em;
 }/*# sourceMappingURL=style.css.map */
