@@ -1,12 +1,10 @@
 export default class Conversor {
 
-    decimalParaOutraBase(numero, base, numeroConvertido=[]) {
+    decimalParaOutraBase(numero, base) {
         const resto = numero % base;
         const quociente = Math.trunc(numero / base);
 
         numeroConvertido.push(resto);
-        console.log(numeroConvertido)
-        Conversor.imprimeResposta(numeroConvertido.reverse().join(""));
 
         if(quociente <= 1) {
             numeroConvertido.push(quociente);
@@ -22,3 +20,5 @@ export default class Conversor {
         $("[data-resposta]").val(numeroConvertido);
     }
 }
+
+const numeroConvertido = [];
