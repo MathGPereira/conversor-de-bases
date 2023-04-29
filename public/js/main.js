@@ -1,10 +1,13 @@
-// import Conversor from "./classes/conversor.js";
+import Conversor from "./classes/conversor.js";
 
-// const conversor = new Conversor();
-// const inputNumero = $("[data-numero]");
+const conversor = new Conversor();
+const formulario = $("[data-formulario]");
+const inputNumero = $("[data-numero]");
 
-// inputNumero.blur(function() {
-//     const numeroParaConverter = $(this).val();
+formulario.on("submit", function(evento) {
+    evento.preventDefault();
 
-//     conversor.decimalParaOutraBase(numeroParaConverter, 2);
-// });
+    const numeroParaConverter = inputNumero.val();
+
+    conversor.decimalParaOutraBase(numeroParaConverter, 2);
+});

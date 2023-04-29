@@ -27,7 +27,7 @@
             </section>
             <section class="principal__conversor">
                 <h2 class="conversor__titulo">Conversor</h2>
-                <form action="#" method="get" autocomplete="off" id="formulario" class="conversor__formulario">
+                <form action="#" method="get" autocomplete="off" id="formulario" class="conversor__formulario" data-formulario>
                     <fieldset class="formulario__agrupamento">
                         <div class="agrupamento__base-padrao">
                             <label for="numero" class="agrupamento__legenda">Número</label>
@@ -58,14 +58,14 @@
                     <fieldset class="formulario__agrupamento">
                         <div class="agrupamento__resposta-padrao">
                             <label for="resposta" class="agrupamento__legenda">Resposta</label>
-                            <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" required data-resposta>
+                            <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" data-resposta>
                         </div>
                         <div class="agrupamento__outra-base inativo">
                             <label for="base">Base</label>
                             <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 2">
                         </div>
                     </fieldset>
-                    <button type="button" class="formulario__converte">Converter</button>
+                    <button type="submit" class="formulario__converte">Converter</button>
                 </form>
             </section>
         </main>
