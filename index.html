@@ -29,8 +29,14 @@
                 <h2 class="conversor__titulo">Conversor</h2>
                 <form action="#" method="get" autocomplete="off" id="formulario" class="conversor__formulario">
                     <fieldset class="formulario__agrupamento">
-                        <legend class="agrupamento__legenda">Número</legend>
-                        <input type="text" name="numero" id="numero" class="agrupamento__input" placeholder="Ex.: 201" required data-numero>
+                        <div class="agrupamento__base-padrao">
+                            <label for="numero" class="agrupamento__legenda">Número</label>
+                            <input type="text" name="numero" id="numero" class="agrupamento__input input-numero" placeholder="Ex.: 201" required data-numero>
+                        </div>
+                        <div class="agrupamento__outra-base inativo">
+                            <label for="base">Base</label>
+                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 5">
+                        </div>
                     </fieldset>
                     <div class="formulario__opcoes">
                         <select class="opcoes__origem opcoes">
@@ -50,8 +56,14 @@
                         </select>
                     </div>
                     <fieldset class="formulario__agrupamento">
-                        <legend class="agrupamento__legenda">Resposta</legend>
-                        <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" required data-resposta>
+                        <div class="agrupamento__resposta-padrao">
+                            <label for="resposta" class="agrupamento__legenda">Resposta</label>
+                            <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" required data-resposta>
+                        </div>
+                        <div class="agrupamento__outra-base inativo">
+                            <label for="base">Base</label>
+                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 2">
+                        </div>
                     </fieldset>
                     <button type="button" class="formulario__converte">Converter</button>
                 </form>
