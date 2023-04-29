@@ -166,7 +166,7 @@ html body {
   vertical-align: middle;
 }
 .principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input:focus {
-  border-color: hsl(0, 75%, 39%);
+  border: 1.5px solid hsl(0, 75%, 39%);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.356);
   outline: none;
 }
@@ -186,8 +186,10 @@ html body {
   background-color: #db0004;
   border-radius: 8px;
   color: #FFFFFF;
-  font-weight: 500;
   cursor: pointer;
+  font-weight: 500;
+  height: 32.82px;
+  overflow-y: scroll;
   padding: 0.5em;
   transition: all 0.3s ease-in-out;
 }
