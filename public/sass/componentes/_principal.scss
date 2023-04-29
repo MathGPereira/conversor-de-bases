@@ -3,7 +3,7 @@
 .principal {
     text-align: center;
     &__introducao {
-        background-color: #FCFCFC;
+        background-color: $cor-quaternaria-claro;
         padding: 1em;
         .introducao__titulo {
             color: $cor-terciaria-claro;
@@ -12,21 +12,21 @@
             margin-bottom: .5em;
         }
         .introducao__texto {
-            color: $cor-secundaria-claro;
+            color: $cor-da-fonte;
             line-height: $altura-da-linha-da-fonte;
         }
     }
     &__conversor {
         align-items: center;
-        background-color: $cor-quaternaria-claro;
+        background-color: $cor-primaria-claro;
         display: flex;
         flex-direction: column;
         padding: 0 1.5em 1em;
         .conversor__titulo {
-            color: $cor-secundaria-claro;
+            color: $cor-terciaria-claro;
             font-size: 20px;
             font-weight: 500;
-            padding: 0.5em 0 1em;
+            padding: 0.5em;
         }
         .conversor__formulario {
             display: flex;
@@ -37,16 +37,28 @@
                 box-sizing: border-box;
                 padding-top: .2em;
                 .agrupamento__input {
-                    border: none;
-                    border-radius: 8px;
-                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
-                    padding: 0.5em 1em;
+                    background-color: transparent;
+                    border: 1px solid hsla(0, 75%, 39%, 0.5);
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    padding: 0.35em 1em;
                     width: 100%;
-                    outline: none;
                     &::placeholder {
                         font-size: 18px;
                         vertical-align: middle;
                     }
+                    &:focus {
+                        border-color: hsla(0, 75%, 39%);
+                        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.356);
+                        //outline: 2px solid $cor-terciaria-claro;
+                        outline: none;
+                    }
+                }
+                .agrupamento__legenda {
+                    color: $cor-da-fonte;
+                    font-size: calc($tamanho-da-fonte - 2px);
+                    font-weight: 500;
                 }
             }
             .formulario__opcoes {
@@ -56,25 +68,37 @@
                 justify-content: space-between;
                 margin: 1em 0;
                 .opcoes {
-                    background-color: #1d776e8f;
+                    background-color: $cor-secundaria-claro;
                     border-radius: 8px;
-                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+                    color: $branco;
+                    font-weight: 500;
                     cursor: pointer;
                     padding: .5em;
-                    transition: background-color .3s ease-in-out;
+                    transition: all .3s ease-in-out;
                     &:hover {
-                        background-color: #05ac9b8f;
+                        background-color: $cor-terciaria-claro;
                     }
+                }
+                .opcoes__para {
+                    color: $cor-terciaria-claro;
+                    font-size: 29px;
+                    font-weight: 500;
                 }
             }
             .formulario__converte {
-                background-color: #1d776e8f;
+                background-color: $cor-secundaria-claro;
                 border-radius: 8px;
                 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+                color: $branco;
                 cursor: pointer;
                 font-size: 16px;
+                font-weight: 500;
                 margin-top: 1em;
                 padding: .5em;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: $cor-terciaria-claro;
+                }
             }
         }
     }

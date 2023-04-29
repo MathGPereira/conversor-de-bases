@@ -127,16 +127,16 @@ html body {
 }
 .principal__conversor {
   align-items: center;
-  background-color: rgba(6, 114, 103, 0.5568627451);
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   padding: 0 1.5em 1em;
 }
 .principal__conversor .conversor__titulo {
-  color: rgba(20, 19, 19, 0.9098039216);
+  color: rgba(172, 25, 25, 0.9058823529);
   font-size: 20px;
   font-weight: 500;
-  padding: 0.5em 0 1em;
+  padding: 0.5em;
 }
 .principal__conversor .conversor__formulario {
   display: flex;
@@ -149,12 +149,13 @@ html body {
   padding-top: 0.2em;
 }
 .principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
-  padding: 0.5em 1em;
+  background-color: transparent;
+  border: 1px solid hsla(0, 75%, 39%, 0.5);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 0.35em 1em;
   width: 100%;
-  outline: none;
 }
 .principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input::-moz-placeholder {
   font-size: 18px;
@@ -164,6 +165,16 @@ html body {
   font-size: 18px;
   vertical-align: middle;
 }
+.principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__input:focus {
+  border-color: hsl(0, 75%, 39%);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.356);
+  outline: none;
+}
+.principal__conversor .conversor__formulario .formulario__agrupamento .agrupamento__legenda {
+  color: rgba(20, 19, 19, 0.9098039216);
+  font-size: 14px;
+  font-weight: 500;
+}
 .principal__conversor .conversor__formulario .formulario__opcoes {
   align-items: center;
   box-sizing: border-box;
@@ -172,30 +183,42 @@ html body {
   margin: 1em 0;
 }
 .principal__conversor .conversor__formulario .formulario__opcoes .opcoes {
-  background-color: rgba(29, 119, 110, 0.5607843137);
+  background-color: #db0004;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+  color: #FFFFFF;
+  font-weight: 500;
   cursor: pointer;
   padding: 0.5em;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .principal__conversor .conversor__formulario .formulario__opcoes .opcoes:hover {
-  background-color: rgba(5, 172, 155, 0.5607843137);
+  background-color: rgba(172, 25, 25, 0.9058823529);
+}
+.principal__conversor .conversor__formulario .formulario__opcoes .opcoes__para {
+  color: rgba(172, 25, 25, 0.9058823529);
+  font-size: 29px;
+  font-weight: 500;
 }
 .principal__conversor .conversor__formulario .formulario__converte {
-  background-color: rgba(29, 119, 110, 0.5607843137);
+  background-color: #db0004;
   border-radius: 8px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
   margin-top: 1em;
   padding: 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+.principal__conversor .conversor__formulario .formulario__converte:hover {
+  background-color: rgba(172, 25, 25, 0.9058823529);
 }
 
 .rodape {
   align-items: center;
   box-sizing: border-box;
-  background-color: #F2F2F2;
+  background-color: #FCFCFC;
   border-top: 2px solid #dfdfdf;
   display: grid;
   grid-template: repeat(1, auto)/repeat(2, 1fr) 1fr;
@@ -221,6 +244,9 @@ html body {
 .rodape__link {
   color: rgba(20, 19, 19, 0.9098039216);
   font-weight: 500;
+}
+.rodape__link:hover {
+  text-decoration: underline;
 }
 .rodape .area-clicavel {
   cursor: pointer;

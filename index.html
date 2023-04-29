@@ -30,20 +30,38 @@
                 <form action="#" method="get" autocomplete="off" id="formulario" class="conversor__formulario">
                     <fieldset class="formulario__agrupamento">
                         <legend class="agrupamento__legenda">Número</legend>
-                        <input type="text" name="numero" id="numero" class="agrupamento__input" placeholder="Número" required data-numero>
+                        <input type="text" name="numero" id="numero" class="agrupamento__input" placeholder="Ex.: 201" required data-numero>
                     </fieldset>
                     <div class="formulario__opcoes">
-                        <div class="opcoes__origem opcoes">
-                            <p class="origem__conteudo">Decimal</p>
-                        </div>
-                        <p class="opcoes__para">para</p>
-                        <div class="opcoes__destino opcoes">
-                            <p class="destino__conteudo">Binário</p>
-                        </div>
+                        <select class="opcoes__origem opcoes">
+                            <option class="origem__conteudo" value="2">Binário</option>
+                            <option class="origem__conteudo" value="3">Ternário</option>
+                            <option class="origem__conteudo" value="4">Quaternário</option>
+                            <option class="origem__conteudo" value="5">Quinário</option>
+                            <option class="origem__conteudo" value="6">Senário</option>
+                            <option class="origem__conteudo" value="7">Setenário</option>
+                            <option class="origem__conteudo" value="8">Octal</option>
+                            <option class="origem__conteudo" value="9">Nonário</option>
+                            <option class="origem__conteudo" value="10">Decimal</option>
+                            <option class="origem__conteudo" value="-1">outros</option>
+                        </select>
+                        <option class="opcoes__para">para</option>
+                        <select class="opcoes__destino opcoes">
+                            <option class="origem__conteudo" value="2">Binário</option>
+                            <option class="origem__conteudo" value="3">Ternário</option>
+                            <option class="origem__conteudo" value="4">Quaternário</option>
+                            <option class="origem__conteudo" value="5">Quinário</option>
+                            <option class="origem__conteudo" value="6">Senário</option>
+                            <option class="origem__conteudo" value="7">Setenário</option>
+                            <option class="origem__conteudo" value="8">Octal</option>
+                            <option class="origem__conteudo" value="9">Nonário</option>
+                            <option class="origem__conteudo" value="10">Decimal</option>
+                            <option class="origem__conteudo" value="-1">outros</option>
+                        </select>
                     </div>
                     <fieldset class="formulario__agrupamento">
                         <legend class="agrupamento__legenda">Resposta</legend>
-                        <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="resposta" required data-resposta>
+                        <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" required data-resposta>
                     </fieldset>
                     <button type="button" class="formulario__converte">Converter</button>
                 </form>

@@ -3,7 +3,7 @@
 .rodape {
     align-items: center;
     box-sizing: border-box;
-    background-color: $cor-primaria-claro;
+    background-color: $cor-quaternaria-claro;
     border-top: 2px solid #dfdfdf;
     display: grid;
     grid-template: repeat(1, auto) / repeat(2, 1fr) 1fr;
@@ -28,8 +28,11 @@
     }
 
     &__link {
-        color: $cor-secundaria-claro;
+        color: $cor-da-fonte;
         font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .area-clicavel {
