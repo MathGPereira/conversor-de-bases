@@ -9,8 +9,9 @@ export default class Conversor {
         if(quociente <= 1) {
             numeroConvertido.push(quociente);
             numeroConvertido.reverse()[0] === 0 ? numeroConvertido.reverse().pop() : numeroConvertido.reverse();
-            
+
             Conversor.imprimeResposta(numeroConvertido.reverse().join(""));
+            numeroConvertido = [];
 
             return;
         }
@@ -18,9 +19,13 @@ export default class Conversor {
         this.decimalParaOutraBase(quociente, base);
     }
 
+    outraBaseParaDecimal(numero, base) {
+    
+    }
+
     static imprimeResposta(numeroConvertido) {
         $("[data-resposta]").val(numeroConvertido);
     }
 }
 
-const numeroConvertido = [];
+let numeroConvertido = [];
