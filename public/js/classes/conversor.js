@@ -19,8 +19,15 @@ export default class Conversor {
         this.decimalParaOutraBase(quociente, base);
     }
 
-    outraBaseParaDecimal(numero, base) {
-    
+    outraBaseParaDecimal(numero, baseOriginal, baseFinal) {
+        let resultado = 0;
+        const listaDeAlgarismos = numero.split("").reverse();
+
+        listaDeAlgarismos.forEach((numero, indice) => {
+            resultado += Number(numero) * (baseOriginal ** indice);
+        });
+
+        this.decimalParaOutraBase(resultado, baseFinal);
     }
 
     static imprimeResposta(numeroConvertido) {

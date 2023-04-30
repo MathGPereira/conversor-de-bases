@@ -39,15 +39,17 @@
                         </div>
                     </fieldset>
                     <div class="formulario__opcoes">
-                        <select class="opcoes__origem opcoes">
+                        <select class="opcoes__origem opcoes" data-base="original">
+                            <option class="origem__conteudo" value="0"></option>
                             <option class="origem__conteudo" value="2">Binário</option>
                             <option class="origem__conteudo" value="8">Octal</option>
                             <option class="origem__conteudo" value="10">Decimal</option>
                             <option class="origem__conteudo" value="16">Hexadecimal</option>
                             <option class="origem__conteudo" value="-1">outros</option>
                         </select>
-                        <option class="opcoes__para">para</option>
-                        <select class="opcoes__destino opcoes">
+                        <p class="opcoes__para">para</p>
+                        <select class="opcoes__destino opcoes" data-base="resposta">
+                            <option class="origem__conteudo" value="0"></option>
                             <option class="origem__conteudo" value="2">Binário</option>
                             <option class="origem__conteudo" value="8">Octal</option>
                             <option class="origem__conteudo" value="10">Decimal</option>
