@@ -1,3 +1,4 @@
+import { verificaSelectAlterado, modificaEstadoDoInput } from "./auxiliar/funcoesAuxiliar.js";
 import Conversor from "./classes/conversor.js";
 
 const conversor = new Conversor();
@@ -7,7 +8,8 @@ const parametros = {};
 
 $("[data-base]").each(function() {
     $(this).on("change", function() {
-        $(this).attr("data-base") === "original" ? parametros.original = $(this).val() : parametros.base = $(this).val();
+        $(this).val() === "-1" ? modificaEstadoDoInput(this) : modificaEstadoDoInput(this);
+        verificaSelectAlterado(this) ? parametros.original = $(this).val() : parametros.base = $(this).val();
     });
 });
 

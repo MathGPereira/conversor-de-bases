@@ -28,14 +28,16 @@
             <section class="principal__conversor">
                 <h2 class="conversor__titulo">Conversor</h2>
                 <form action="#" method="get" autocomplete="off" id="formulario" class="conversor__formulario" data-formulario>
-                    <fieldset class="formulario__agrupamento">
+                    <fieldset class="formulario__agrupamento" data-agrupamento-modificador="original">
                         <div class="agrupamento__base-padrao">
                             <label for="numero" class="agrupamento__legenda">Número</label>
                             <input type="text" name="numero" id="numero" class="agrupamento__input input-numero" placeholder="Ex.: 201" required data-numero>
+                            <span class="mensagem-erro"></span>
                         </div>
-                        <div class="agrupamento__outra-base inativo">
+                        <div class="agrupamento__outra-base inativo" data-input-modificador="original">
                             <label for="base">Base</label>
                             <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 5">
+                            <span class="mensagem-erro"></span>
                         </div>
                     </fieldset>
                     <div class="formulario__opcoes">
@@ -57,14 +59,16 @@
                             <option class="origem__conteudo" value="-1">outros</option>
                         </select>
                     </div>
-                    <fieldset class="formulario__agrupamento">
+                    <fieldset class="formulario__agrupamento" data-agrupamento-modificador="resposta">
                         <div class="agrupamento__resposta-padrao">
                             <label for="resposta" class="agrupamento__legenda">Resposta</label>
-                            <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" data-resposta>
+                            <input type="text" name="resposta" id="resposta" class="agrupamento__input" placeholder="Ex.: 11001001" readonly data-resposta>
+                            <span class="mensagem-erro"></span>
                         </div>
-                        <div class="agrupamento__outra-base inativo">
+                        <div class="agrupamento__outra-base inativo" data-input-modificador="resposta">
                             <label for="base">Base</label>
                             <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 2">
+                            <span class="mensagem-erro"></span>
                         </div>
                     </fieldset>
                     <button type="submit" class="formulario__converte">Converter</button>
