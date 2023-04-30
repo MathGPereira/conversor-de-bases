@@ -36,13 +36,12 @@
                         </div>
                         <div class="agrupamento__outra-base inativo" data-input-modificador="original">
                             <label for="base">Base</label>
-                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 5">
+                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 5" data-base-alterada="original">
                             <span class="mensagem-erro"></span>
                         </div>
                     </fieldset>
                     <div class="formulario__opcoes">
                         <select class="opcoes__origem opcoes" data-base="original">
-                            <option class="origem__conteudo" value="0"></option>
                             <option class="origem__conteudo" value="2">Binário</option>
                             <option class="origem__conteudo" value="8">Octal</option>
                             <option class="origem__conteudo" value="10">Decimal</option>
@@ -51,7 +50,6 @@
                         </select>
                         <p class="opcoes__para">para</p>
                         <select class="opcoes__destino opcoes" data-base="resposta">
-                            <option class="origem__conteudo" value="0"></option>
                             <option class="origem__conteudo" value="2">Binário</option>
                             <option class="origem__conteudo" value="8">Octal</option>
                             <option class="origem__conteudo" value="10">Decimal</option>
@@ -67,7 +65,7 @@
                         </div>
                         <div class="agrupamento__outra-base inativo" data-input-modificador="resposta">
                             <label for="base">Base</label>
-                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 2">
+                            <input type="number" name="base" id="base" class="agrupamento__input" placeholder="Ex.: 2" data-base-alterada="resposta">
                             <span class="mensagem-erro"></span>
                         </div>
                     </fieldset>

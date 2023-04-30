@@ -2,10 +2,15 @@ export function verificaSelectAlterado(that) {
     return $(that).attr("data-base") === "original";
 }
 
-export function modificaEstadoDoInput(that) {
+export function modificaEstadoDoInput(that, modo) {
     const agrupamento = $(`[data-agrupamento-modificador='${$(that).attr("data-base")}']`);
     const input = $(`[data-input-modificador='${$(that).attr("data-base")}']`);
-
-    agrupamento.toggleClass("agrupamento-grid");
-    input.toggleClass("inativo");
+    
+    if(modo) {
+        agrupamento.addClass("agrupamento-grid");
+        input.removeClass("inativo");
+    }else {
+        agrupamento.removeClass("agrupamento-grid");
+        input.addClass("inativo");
+    }
 }
