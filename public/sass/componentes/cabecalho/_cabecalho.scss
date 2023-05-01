@@ -23,4 +23,33 @@
         background: url("../img/icone/hamburguer.png") no-repeat center center / cover;
         cursor: pointer;
     }
+    &__menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cabecalho {
+        justify-content: space-evenly;
+        &__menu-hamburguer {
+            display: none;
+        }
+        &__menu {
+            border: 1px solid $cor-quaternaria-claro;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            padding: .5em;
+            text-transform: capitalize;
+            transition: background-color .3s linear;
+            &:hover {
+                background-color: #dadada;
+                box-shadow: inset 1px 1px 1px $cor-quaternaria-claro;
+                height: 42px;
+                border: none;
+            }
+        }
+    }
 }

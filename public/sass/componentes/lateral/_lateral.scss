@@ -4,7 +4,7 @@
 @include iconesLateral($lista-icones-lateral);
 
 .lateral {
-    background-color: $cor-primaria-claro;
+    background-image: linear-gradient(to bottom, $cor-quaternaria-claro, $cor-primaria-claro) ;
     border-right: 1px solid $cor-secundaria-claro;
     box-sizing: border-box;
     height: 100vh;

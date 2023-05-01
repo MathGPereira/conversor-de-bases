@@ -118,7 +118,35 @@ html body {
   background: url("../img/icone/hamburguer.png") no-repeat center center/cover;
   cursor: pointer;
 }
+.cabecalho__menu {
+  display: none;
+}
 
+@media screen and (min-width: 992px) {
+  .cabecalho {
+    justify-content: space-evenly;
+  }
+  .cabecalho__menu-hamburguer {
+    display: none;
+  }
+  .cabecalho__menu {
+    border: 1px solid #FCFCFC;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5em;
+    text-transform: capitalize;
+    transition: background-color 0.3s linear;
+  }
+  .cabecalho__menu:hover {
+    background-color: #dadada;
+    box-shadow: inset 1px 1px 1px #FCFCFC;
+    height: 42px;
+    border: none;
+  }
+}
 .lista-numero::before {
   content: url("../img/icone/numero.png");
   margin-right: 0.5em;
@@ -138,7 +166,7 @@ html body {
 }
 
 .lateral {
-  background-color: #F2F2F2;
+  background-image: linear-gradient(to bottom, #FCFCFC, #F2F2F2);
   border-right: 1px solid #db0004;
   box-sizing: border-box;
   height: 100vh;
