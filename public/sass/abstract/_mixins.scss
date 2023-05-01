@@ -1,0 +1,9 @@
+@mixin iconesLateral($listaIconesLateral) {
+    @each $iconeLateral in $listaIconesLateral {
+        .lista-#{$iconeLateral}::before {
+            content: url("../img/icone/#{$iconeLateral}.png");
+            margin-right: .5em;
+            vertical-align: middle;
+        }
+    }
+}

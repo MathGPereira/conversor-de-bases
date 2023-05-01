@@ -119,8 +119,58 @@ html body {
   cursor: pointer;
 }
 
-.cabecalho-escuro {
-  background-color: #5a5a5a;
+.lista-numero::before {
+  content: url("../img/icone/numero.png");
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.lista-sobre::before {
+  content: url("../img/icone/sobre.png");
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.lista-texto::before {
+  content: url("../img/icone/texto.png");
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.lateral {
+  background-color: #F2F2F2;
+  border-right: 1px solid #db0004;
+  box-sizing: border-box;
+  height: 100vh;
+  left: 0;
+  padding: 1.5em;
+  position: absolute;
+  top: 0;
+  width: 60vw;
+}
+.lateral__logo {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+.lateral__logo .logo__imagem {
+  width: 32px;
+}
+.lateral__logo .logo__texto {
+  color: rgba(20, 19, 19, 0.9098039216);
+  font-size: 18px;
+  font-weight: 500;
+}
+.lateral__lista {
+  line-height: 2.8em;
+}
+.lateral__lista .lista__item {
+  font-weight: 500;
+}
+.lateral__lista .lista__item .item__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .principal {

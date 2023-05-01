@@ -1,0 +1,42 @@
+@import "../../abstract/variaveis";
+@import "../../abstract/mixins";
+
+@include iconesLateral($lista-icones-lateral);
+
+.lateral {
+    background-color: $cor-primaria-claro;
+    border-right: 1px solid $cor-secundaria-claro;
+    box-sizing: border-box;
+    height: 100vh;
+    left: 0;
+    padding: 1.5em;
+    position: absolute;
+    top: 0;
+    width: 60vw;
+    &__logo {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
+        .logo__imagem {
+            width: 32px;
+        }
+        .logo__texto {
+            color: $cor-da-fonte;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    &__lista {
+        line-height: $altura-da-linha-da-fonte * 2;
+        .lista__item {
+            font-weight: 500;
+            .item__link {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
