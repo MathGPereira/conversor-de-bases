@@ -14,7 +14,7 @@ $("[data-base]").each(function() {
 
 formulario.on("submit", function(evento) {
     evento.preventDefault();
-    const numeroParaConverter = inputNumero.val();
+    const numeroParaConverter = inputNumero.val().toUpperCase();
 
     $("[data-base]").each(function() {
         verificaSelectAlterado(this) ? parametros.original = $(this).val() : parametros.base = $(this).val();

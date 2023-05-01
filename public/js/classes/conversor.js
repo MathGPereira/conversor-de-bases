@@ -1,7 +1,19 @@
 export default class Conversor {
 
     async decimalParaOutraBase(numero, base) {
-        
+        const resto = numero % base;
+        const quociente = Math.trunc(numero / base);
+        const bancoDeDados = await Conversor.conectaComAPI("http://localhost:3000/restoParaBaseMaiorQueDecimal");
+
+        resto >= 10 ? listaDeRestos.push(bancoDeDados[0][resto]) : listaDeRestos.push(resto);
+       
+        if(quociente === 0) {
+            Conversor.imprimeResposta(listaDeRestos.reverse().join(""));
+
+            return;
+        }
+
+        this.decimalParaOutraBase(quociente, base);
     }
 
     async outraBaseParaDecimal(numero, baseOriginal, baseFinal) {
@@ -32,4 +44,4 @@ export default class Conversor {
     }
 }
 
-let numeroConvertido = [];
+let listaDeRestos = [];
