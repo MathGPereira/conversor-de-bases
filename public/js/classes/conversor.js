@@ -9,7 +9,7 @@ export default class Conversor {
        
         if(quociente === 0) {
             Conversor.imprimeResposta(listaDeRestos.reverse().join(""));
-
+            listaDeRestos = [];
             return;
         }
 

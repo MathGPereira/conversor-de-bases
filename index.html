@@ -11,14 +11,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="cabecalho">
+        <header class="cabecalho" data-container="cabecalho">
             <h1 class="cabecalho__logo">
                 <img src="./public/img/logo/logo.png" alt="Logo do website" class="logo__imagem">
                 <p class="logo__texto">Bases Infinitas</p>
             </h1>
             <i class="cabecalho__menu-hamburguer" aria-label="menu-hamburguer"></i>
         </header>
-        <main class="principal">
+        <main class="principal" data-container="principal">
             <section class="principal__introducao">
                 <h2 class="introducao__titulo">Conversor de bases numéricas</h2>
                 <p class="introducao__texto">
@@ -73,7 +73,7 @@
                 </form>
             </section>
         </main>
-        <footer class="rodape">
+        <footer class="rodape" data-container="rodape">
             <div class="git area-clicavel rodape__container">
                 <i class="rodape__git" aria-label="ícone do GitHub"></i>
                 <a href="https://github.com/MathGPereira" rel="external foloow" target="_blank" class="rodape__link">GitHub</a>
@@ -82,7 +82,7 @@
                 <i class="rodape__linkedin" aria-label="ícone do Linkedin"></i>
                 <a href="https://www.linkedin.com/in/matheuspereiradevfront/" rel="external foloow" target="_blank" class="rodape__link">Linkedin</a>
             </div>
-            <i class="rodape__darkmode area-clicavel" aria-label="ícone do darkmode"></i>
+            <i class="rodape__darkmode area-clicavel" aria-label="ícone do darkmode" data-darkmode></i>
         </footer>
         <script type="text/javascript" src="./public/jquery/jquery.js"></script>
         <script type="module" src="./public/js/main.js"></script>

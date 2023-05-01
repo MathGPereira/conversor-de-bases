@@ -1,10 +1,11 @@
-import { verificaSelectAlterado, modificaEstadoDoInput } from "./auxiliar/funcoesAuxiliar.js";
+import { verificaSelectAlterado, modificaEstadoDoInput, mudaPaletaDeCor } from "./auxiliar/funcoesAuxiliar.js";
 import Conversor from "./classes/conversor.js";
 
 const conversor = new Conversor();
 const formulario = $("[data-formulario]");
 const inputNumero = $("[data-numero]");
 const parametros = {};
+const botaoModoClaroEscuro = $("[data-darkmode]");
 
 $("[data-base]").each(function() {
     $(this).on("change", function() {
@@ -28,4 +29,10 @@ formulario.on("submit", function(evento) {
 
     parametros.original === "10" ? conversor.decimalParaOutraBase(numeroParaConverter, parametros.base) : conversor.outraBaseParaDecimal(numeroParaConverter, parametros.original, parametros.base);
     inputNumero.focus();
+});
+
+botaoModoClaroEscuro.click(function() {
+    $("[data-container]").each(function() {
+        mudaPaletaDeCor($(this));
+    });
 });

@@ -119,6 +119,10 @@ html body {
   cursor: pointer;
 }
 
+.cabecalho-escuro {
+  background-color: #5a5a5a;
+}
+
 .principal {
   text-align: center;
 }

@@ -14,3 +14,7 @@ export function modificaEstadoDoInput(that, modo) {
         input.addClass("inativo");
     }
 }
+
+export function mudaPaletaDeCor(container) {
+    container.toggleClass(`${container.attr("data-container")}-escuro`);
+}
