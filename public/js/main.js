@@ -1,4 +1,4 @@
-import { verificaSelectAlterado, modificaEstadoDoInput, mudaPaletaDeCor } from "./auxiliar/funcoesAuxiliar.js";
+import { verificaSelectAlterado, modificaEstadoDoInput, mudaPaletaDeCor, alteraModoDoMenuLateral } from "./auxiliar/funcoesAuxiliar.js";
 import Conversor from "./classes/conversor.js";
 
 const conversor = new Conversor();
@@ -6,6 +6,7 @@ const formulario = $("[data-formulario]");
 const inputNumero = $("[data-numero]");
 const parametros = {};
 const botaoModoClaroEscuro = $("[data-darkmode]");
+const modificador = $("[data-modificador]");
 
 $("[data-base]").each(function() {
     $(this).on("change", function() {
@@ -35,4 +36,8 @@ botaoModoClaroEscuro.click(function() {
     $("[data-container]").each(function() {
         mudaPaletaDeCor($(this));
     });
+});
+
+modificador.click(function() {
+    alteraModoDoMenuLateral();
 });

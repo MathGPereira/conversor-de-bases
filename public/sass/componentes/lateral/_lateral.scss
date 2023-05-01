@@ -8,10 +8,11 @@
     border-right: 1px solid $cor-secundaria-claro;
     box-sizing: border-box;
     height: 100vh;
-    left: 0;
+    left: -9999px;
     padding: 1.5em;
     position: absolute;
     top: 0;
+    transition: left .5s ease-in-out;
     width: 60vw;
     &__logo {
         align-items: center;
@@ -39,4 +40,8 @@
             }
         }
     }
+}
+
+.ativo {
+    left: 0;
 }

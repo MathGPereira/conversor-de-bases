@@ -142,10 +142,11 @@ html body {
   border-right: 1px solid #db0004;
   box-sizing: border-box;
   height: 100vh;
-  left: 0;
+  left: -9999px;
   padding: 1.5em;
   position: absolute;
   top: 0;
+  transition: left 0.5s ease-in-out;
   width: 60vw;
 }
 .lateral__logo {
@@ -171,6 +172,10 @@ html body {
 .lateral__lista .lista__item .item__link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.ativo {
+  left: 0;
 }
 
 .principal {

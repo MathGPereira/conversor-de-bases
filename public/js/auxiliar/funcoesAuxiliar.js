@@ -18,3 +18,9 @@ export function modificaEstadoDoInput(that, modo) {
 export function mudaPaletaDeCor(container) {
     container.toggleClass(`${container.attr("data-container")}-escuro`);
 }
+
+export function alteraModoDoMenuLateral() {
+    const menuLateral = $("[data-menu-lateral]");
+
+    menuLateral.toggleClass("ativo");
+}
