@@ -206,6 +206,26 @@ html body {
   left: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .lateral {
+    border: 1px solid #db0004;
+    opacity: 0;
+    height: auto;
+    left: 53%;
+    top: 8%;
+    transition: opacity 0.2s linear;
+    width: 24vw;
+  }
+  .lateral__logo {
+    display: none;
+  }
+  .lateral .item__link {
+    font-size: 18px;
+  }
+  .ativo {
+    opacity: 1;
+  }
+}
 .principal {
   text-align: center;
 }
