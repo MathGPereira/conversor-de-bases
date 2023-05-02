@@ -1,6 +1,15 @@
 # Conversor de Bases Numéricas
 
 ## Sobre
+Com o intuito de aprender mais sobre manipulação de DOM com jQuery, nasceu um projeto simples, mas não pouco complexo. 
+Aqui, de forma bem prática, é possível que o usuário escolha uma base numérica qualquer e, com um simples clicar de botão, obtenha a conversão do mesmo para outras bases numéricas.
+Como limitação, o conversor não garante bons resultados para bases maiores que a sexagesimal (base 60).
+Porém, é garantida uma precisão de 100% em todos os casos de conversão no qual o projeto se dedica.
+Aqui se faz o uso de programação orientada a objeto, jQuery, AJAX, SASS, CSS, JavaScript, Node.js, HTML semântico e toda a lógica de programação necessária para se criar os algoritmos de conversão.
+
+## Observação
+Este projeto foi feito somente para tamanhos de tela mobile com início em 375px.
+Além do mais, para conversões entre bases maiores que a decimal, se faz necessário ativar o json-server para que haja um resultado válido.
 
 ## Sumário
 
