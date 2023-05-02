@@ -1,4 +1,5 @@
 # Conversor de Bases Numéricas
+![Conversor](./public/img/projeto/conversor.png)
 
 ## Sobre
 Com o intuito de aprender mais sobre manipulação de DOM com jQuery, nasceu um projeto simples, mas não pouco complexo. 
